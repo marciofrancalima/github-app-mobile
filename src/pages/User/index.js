@@ -16,6 +16,7 @@ import {
   Info,
   Title,
   Author,
+  Loading,
 } from './styles';
 
 export default class User extends Component {
@@ -50,7 +51,9 @@ export default class User extends Component {
     return (
       <Container>
         {loading ? (
-          <ActivityIndicator color="#4a90e2" size={40} />
+          <Loading>
+            <ActivityIndicator color="#4a90e2" size={40} />
+          </Loading>
         ) : (
           <>
             <Header>
